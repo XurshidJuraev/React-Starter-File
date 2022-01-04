@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./Assets/Fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+		url('./Assets/Fonts/roboto-v29-latin-regular.woff') format('woff');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: url('./Assets/Fonts/roboto-v29-latin-500.woff2') format('woff2'),
+		url('./Assets/Fonts/roboto-v29-latin-500.woff') format('woff');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./Assets/Fonts/roboto-v29-latin-700.woff2') format('woff2'),
+		url('./Assets/Fonts/roboto-v29-latin-700.woff') format('woff');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+	text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.container,
+.container-sm {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container-sm {
+	max-width: 904px;
+}
+
+.section__heading {
+	margin-top: 0;
+	font-family: 'Open Sans Condensed';
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 43px;
+	color: #000;
 }

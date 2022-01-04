@@ -1,0 +1,64 @@
+/* HEADER styles */
+.header {
+	background-color: #fff;
+}
+
+.header .container,
+.footer .container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo-img {
+	margin-right: 16px;
+}
+
+.header__logo-name {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+	color: #222;
+	transition: all 0.3s ease;
+}
+
+.header__logo-name:hover {
+	color: #de2e54;
+}
+
+.header__logo-name:active {
+	opacity: 0.6;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 24px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 23px;
+	letter-spacing: 2px;
+	background-color: #de2e54;
+	color: #fff;
+	border: 2px solid #de2e54;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #de2e54;
+}
+
+.btn:active {
+	background-color: #de2e54;
+	color: #fff;
+	opacity: 0.6;
+}

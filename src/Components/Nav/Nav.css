@@ -1,0 +1,29 @@
+.header__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header__item + .header__item {
+	margin-left: 32px;
+}
+
+.header__link {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #222;
+	transition: all 0.3s ease;
+}
+
+.header__link:hover {
+	color: #de2e54;
+}
+
+.header__link:active {
+	opacity: 0.6;
+}
