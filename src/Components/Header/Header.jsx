@@ -3,30 +3,39 @@ import Nav from '../Nav/Nav';
 
 function Header() {
 	return (
-		<header className='header'>
-			<div className='container'>
-				<a className='header__logo' href='#link'>
-					<img
-						className='header__logo-img'
-						src='https://via.placeholder.com/50'
-						alt='Logo'
-						width='50'
-						height='50'
-					/>
+		<header>
 
-					<span className='header__logo-name'>AnsorMed</span>
-				</a>
+			<div className="header-1">
 
-				<div className='hamburger-menu'>
-					<span className='hamburger-menu__line'></span>
+				<a href="#" className="logo"><i className="fas fa-shopping-basket"></i>groco</a>
+
+				{/* <form className="search-box-container">
+					<input type="search" id="search-box" placeholder="Maxsulotlar qidirish">
+					<label for="search-box" className="fas fa-search"></label>
+				</form> */}
+
+			</div>
+
+			<div className="header-2">
+
+				<div id="menu-bar" className="fas fa-bars"></div>
+
+				<nav className="navbar">
+					<a href="#home">Bosh sahifa</a>
+					<a href="#category">Katigoriyalar</a>
+					<a href="#product">Maxsulotlar</a>
+					<a href="#deal">Chegirmalar</a>
+					<a href="#contact">Aloqa</a>
+				</nav>
+
+				<div className="icons">
+					<a href="#" className="fas fa-shopping-cart"></a>
+					<a href="#" className="fas fa-heart"></a>
+					<a href="#" className="fas fa-user-circle"></a>
 				</div>
 
-				<Nav />
-
-				<a className='btn' href='#cta'>
-					Qabulga yozilish
-				</a>
 			</div>
+
 		</header>
 	);
 }
